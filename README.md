@@ -1,95 +1,134 @@
-# NYC-Schools
-Every year, school test results impact the college admissions fate of millions of students.  In this project, you will use standardized test performance data from NYC's public schools to identify the schools with top math results, look at how performance varies by borough, and find the city's top ten performing schools!
+# Analyzing NYC Public School SAT Scores: Insights for Policy Makers, Researchers, and Parents
 
 
-Which NYC schools have the best math results?
+1. **Overview**
 
-    The best math results are at least 80% of the *maximum possible score of 800* for math.
-    Save your results in a pandas DataFrame called best_math_schools, including "school_name" and "average_math" columns, sorted by "average_math" in descending order.
-
-What are the top 10 performing schools based on the combined SAT scores?
-
-    Save your results as a pandas DataFrame called top_10_schools containing the "school_name" and a new column named "total_SAT", with results ordered by "total_SAT" in descending order ("total_SAT" being the sum of math, reading, and writing scores).
-
-Which single borough has the largest standard deviation in the combined SAT score?
-
-    Save your results as a pandas DataFrame called largest_std_dev.
-    The DataFrame should contain one row, with:
-        "borough" - the name of the NYC borough with the largest standard deviation of "total_SAT".
-        "num_schools" - the number of schools in the borough.
-        "average_SAT" - the mean of "total_SAT".
-        "std_SAT" - the standard deviation of "total_SAT".
-    Round all numeric values to two decimal places.
+    Every year, school test results impact the college admissions fate of millions of students. In this project, standardized test performance data from NYC's public schools will be used to identify the schools with top math results, analyse how performance varies by borough, and find the city's top ten performing schools!
 
 
-![New York City schoolbus](schoolbus.jpg)
-
-Photo by [Jannis Lucas](https://unsplash.com/@jannis_lucas) on [Unsplash](https://unsplash.com).
-<br>
-
-Every year, American high school students take SATs, which are standardized tests intended to measure literacy, numeracy, and writing skills. There are three sections - reading, math, and writing, each with a **maximum score of 800 points**. These tests are extremely important for students and colleges, as they play a pivotal role in the admissions process.
-
-Analyzing the performance of schools is important for a variety of stakeholders, including policy and education professionals, researchers, government, and even parents considering which school their children should attend. 
-
-You have been provided with a dataset called `schools.csv`, which is previewed below.
-
-You have been tasked with answering three key questions about New York City (NYC) public school SAT performance.
+    ![New York City schoolbus](schoolbus.jpg)
 
 
-1. Importação de Bibliotecas
-As bibliotecas utilizadas incluem:
-• Manipulação e processamento de dados: pandas , numpy
-• Visualização: seaborn , matplotlib
-• Modelagem e validação: sklearn
-• Ferramentas adicionais: yellowbrick (para análise de resíduos e previsões)
+    Skills involved: data cleaning, data analysis, data visualization, and insights generation.
+   
 
-2. Funções Auxiliares
-• Função get_metrics : Um dicionário para calcular métricas de avaliação de modelos, como R²,
-MAE, MAPE e RMSE.
 
-3. Exploração do Dataset
-O dataset utilizado contém informações sobre:
-• age: Idade do indivíduo.
-• sex: Gênero (male ou female).
-• bmi: Índice de Massa Corporal.
-• children: Número de dependentes.
-• smoker: Se o indivíduo é fumante (yes ou no).
+2. **Problem Statement**
 
-• charges: Custos médicos cobrados.
-Análises incluem:
-• Distribuições e correlações entre variáveis.
-• Identiﬁcação de padrões relacionados aos custos médicos.
-• Impacto do hábito de fumar nos custos.
 
-4. Pré-processamento
-• Imputação de valores ausentes: Substituição de dados faltantes usando SimpleImputer .
-• Normalização de dados: Uso de MinMaxScaler .
-• Codiﬁcação de variáveis categóricas: OneHotEncoder .
+    This project aims to properly answer these questions:
 
-5. Divisão de Dados
-• Treinamento e teste: Separar os dados para treinamento e validação dos modelos.
+    a) Which NYC schools have the best math results?
 
-6. Modelagem Preditiva
-Modelos utilizados:
-• DummyRegressor: Baseline para comparação.
-• Regressão Linear: Modelo linear simples.
-• Modelos Avançados:
-◦ LassoCV
-◦ RidgeCV
-◦ Random Forest Regressor
-◦ Gradient Boosting Regressor
+    b) What are the top 10 performing schools based on combined SAT scores?
 
-7. Validação e Ajuste de Modelos
-• Uso de GridSearchCV para encontrar os melhores hiperparâmetros.
-• Avaliação das previsões com métricas customizadas e visualização de resíduos.
+    c) Which borough has the largest standard deviation in SAT scores, and what insights can we derive from it?
+   
 
-8. Visualização dos Resultados
-• Análise gráﬁca de previsões e resíduos usando o Yellowbrick.
-• Comparativo entre diferentes modelos e suas métricas.
 
-Requisitos
-Para executar o notebook, certiﬁque-se de que as seguintes dependências estejam instaladas:
-pip install numpy pandas seaborn matplotlib scikit-learn yellowbrick
-Como Utilizar
-1. Clone o repositório:
-git clone https://github.com/seu-usuario/insurance-analysis.git
+3. **Dataset**
+   
+
+    File name: schools.csv
+   
+    Description: Includes SAT performance data of NYC public schools (as image below).
+
+    ![image](https://github.com/user-attachments/assets/14c2dfab-5369-4b2e-bf77-2c4363a2270c)
+
+
+    Source: Publicly available.
+   
+    Size and structure: Share the number of rows, columns, and any key details about the data.
+
+
+    ![image](https://github.com/user-attachments/assets/9d8b5bde-c15d-485e-9560-4658ce74a5ed)
+
+
+
+4. Approach and Methodology
+
+    Explain how you tackled the problem:
+        Data Cleaning:
+            Steps to clean the data (e.g., handling missing values, data types, and outliers).
+        Exploratory Data Analysis (EDA):
+            Briefly describe the visualizations and statistics used to understand the data.
+        Analysis:
+            How you derived the results for each question.
+            The use of calculations like percentages, sums, means, standard deviations, etc.
+        Insights:
+            Mention key insights gained from the analysis for each question.
+
+
+
+5. Results
+
+    Provide summaries and key findings for each question:
+        Best Math Results: List of schools that meet the criteria, with their math scores.
+        Top 10 Schools by Combined SAT: The top 10 schools and their combined SAT scores.
+        Borough with Largest Standard Deviation: Name of the borough, number of schools, average SAT score, and standard deviation.
+    Include links to view the DataFrames (e.g., best_math_schools, top_10_schools, largest_std_dev) or a preview of their outputs.
+
+
+
+
+
+6. Technologies Used
+
+    List the technologies and libraries used:
+        Languages: Python
+        Libraries: Pandas, NumPy, Matplotlib/Seaborn (if used for EDA), etc.
+        Any other tools (e.g., Jupyter Notebook for execution, GitHub for sharing).
+
+
+
+
+
+
+7. Skills Demonstrated
+
+    Highlight the specific data science skills showcased in this project:
+        Data cleaning and preprocessing.
+        Exploratory data analysis and visualization.
+        Statistical analysis.
+        Problem-solving and insights generation.
+        Reproducibility with clean code and well-documented processes.
+
+
+
+
+
+8. How to Reproduce the Project
+
+    Step-by-step instructions to reproduce your analysis:
+        Clone the repository.
+        Install required libraries (pip install -r requirements.txt).
+        Provide details on how to run the code and view the results (e.g., Jupyter Notebook or Python script).
+
+
+
+
+
+
+9. Future Improvements
+
+    Suggest areas for further analysis or ways to improve:
+        Include additional datasets for context (e.g., demographics, funding, or teacher-student ratios).
+        More advanced modeling (e.g., predicting SAT scores or identifying key factors affecting performance).
+        Interactive visualizations or dashboards.
+
+
+
+
+
+
+
+10. Contact
+
+    Provide your contact information or LinkedIn/GitHub profile link for recruiters to reach out.
+    Encourage them to connect for feedback or further discussion.
+
+
+
+
+    
+
