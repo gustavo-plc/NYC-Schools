@@ -50,21 +50,21 @@
     
     Data Cleaning:
    
-       The data in the csv file was already clean and fully populated.
+    The data in the csv file was already clean and fully populated.
    
     Exploratory Data Analysis (EDA):
-   
-        To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
+
+    To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
    
     Analysis:
    
-        The results were obtained from the dataframe manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
+   The results were obtained from the dataframe manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
    
-        The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation.
+   The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation.
    
     Insights:
    
-        The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education.
+   The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education. 
 
 
 
