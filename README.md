@@ -49,18 +49,26 @@
 
     
     Data Cleaning:
-        The data in the csv file was already clean and fully populated. 
+   
+       The data in the csv file was already clean and fully populated.
+   
     Exploratory Data Analysis (EDA):
+   
         To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
+   
     Analysis:
+   
         The results were obtained from the dataframe manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
-        The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation. 
+   
+        The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation.
+   
     Insights:
+   
         The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education.
 
 
 
-5. Results
+6. Results
 
     Provide summaries and key findings for each question:
         Best Math Results: List of schools that meet the criteria, with their math scores.
@@ -72,37 +80,31 @@
 
 
 
-6. Technologies Used
+7. Technologies Used
 
 
    Languages: Python
+   
    IDE: Jupyter Notebook on Google Colab
+   
    Libraries: Pandas, NumPy and Matplotlib.
+   
    GitHub repo: https://github.com/gustavo-plc/NYC-Schools
 
 
 
-
-8. Skills Demonstrated
+9. Skills Demonstrated
 
     
    Data preprocessing.
+   
    Exploratory data analysis and visualization.
+   
    Statistical analysis.
+   
    Problem-solving and insights generation.
+   
    Reproducibility with clean code and well-documented processes.
-
-
-
-
-9. How to Reproduce the Project (not ready yet)
-
-
-    Step-by-step instructions to reproduce your analysis:
-        Clone the repository.
-        Install required libraries (pip install -r requirements.txt).
-        Provide details on how to run the code and view the results (e.g., Jupyter Notebook or Python script).
-
 
 
 
@@ -111,14 +113,16 @@
 
 
 
-    Additional datasets, like schools budget and academic background of teachers, can be combined with the exisisting data to generate further analysis and insights.
+    Additional datasets, like schools budget and academic background of teachers, can be combined with the exisiting data to generate further analysis and insights.
+
     Machine learning could predict future test performance, classify schools by their results to identify the top ten, and analyze performance variations across boroughs to identify influential factors.
+
     Interactive visualizations or dashboards to improove visualization.
 
 
 
 
-12. Contact
+11. Contact
 
     Feel free to reach out to me through my LinkedIn profile or GitHub repository for any inquiries, feedback, or further discussion.
     
