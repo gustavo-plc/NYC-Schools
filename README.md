@@ -47,16 +47,16 @@
 
 4. Approach and Methodology
 
-    Explain how you tackled the problem:
-        Data Cleaning:
-            Steps to clean the data (e.g., handling missing values, data types, and outliers).
-        Exploratory Data Analysis (EDA):
-            Briefly describe the visualizations and statistics used to understand the data.
-        Analysis:
-            How you derived the results for each question.
-            The use of calculations like percentages, sums, means, standard deviations, etc.
-        Insights:
-            Mention key insights gained from the analysis for each question.
+    
+    Data Cleaning:
+        The data in the csv file was already clean and fully populated. 
+    Exploratory Data Analysis (EDA):
+        To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
+    Analysis:
+        The results were obtained from the dataframe manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
+        The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation. 
+    Insights:
+        The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education.
 
 
 
@@ -74,30 +74,29 @@
 
 6. Technologies Used
 
-    List the technologies and libraries used:
-        Languages: Python
-        Libraries: Pandas, NumPy, Matplotlib/Seaborn (if used for EDA), etc.
-        Any other tools (e.g., Jupyter Notebook for execution, GitHub for sharing).
+
+   Languages: Python
+   IDE: Jupyter Notebook on Google Colab
+   Libraries: Pandas, NumPy and Matplotlib.
+   GitHub repo: https://github.com/gustavo-plc/NYC-Schools
 
 
 
 
+8. Skills Demonstrated
 
-
-7. Skills Demonstrated
-
-    Highlight the specific data science skills showcased in this project:
-        Data cleaning and preprocessing.
-        Exploratory data analysis and visualization.
-        Statistical analysis.
-        Problem-solving and insights generation.
-        Reproducibility with clean code and well-documented processes.
-
+    
+   Data preprocessing.
+   Exploratory data analysis and visualization.
+   Statistical analysis.
+   Problem-solving and insights generation.
+   Reproducibility with clean code and well-documented processes.
 
 
 
 
-8. How to Reproduce the Project
+9. How to Reproduce the Project (not ready yet)
+
 
     Step-by-step instructions to reproduce your analysis:
         Clone the repository.
@@ -108,27 +107,23 @@
 
 
 
-
-9. Future Improvements
-
-    Suggest areas for further analysis or ways to improve:
-        Include additional datasets for context (e.g., demographics, funding, or teacher-student ratios).
-        More advanced modeling (e.g., predicting SAT scores or identifying key factors affecting performance).
-        Interactive visualizations or dashboards.
+10. Future Improvements
 
 
+
+    Additional datasets, like schools budget and academic background of teachers, can be combined with the exisisting data to generate further analysis and insights.
+    Machine learning could predict future test performance, classify schools by their results to identify the top ten, and analyze performance variations across boroughs to identify influential factors.
+    Interactive visualizations or dashboards to improove visualization.
 
 
 
 
+12. Contact
 
-10. Contact
-
-    Provide your contact information or LinkedIn/GitHub profile link for recruiters to reach out.
-    Encourage them to connect for feedback or further discussion.
-
-
-
-
+    Feel free to reach out to me through my LinkedIn profile or GitHub repository for any inquiries, feedback, or further discussion.
     
-
+    LinkedIn: https://www.linkedin.com/in/gustavo-plc/
+    
+    GitHub: https://github.com/gustavo-plc
+    
+    I welcome the opportunity to connect with recruiters and others in the industry to discuss potential opportunities or to receive constructive feedback. Let’s stay in touch!
