@@ -75,13 +75,15 @@ Best Math Results: List of schools that meet the criteria, with their math score
 
 Top 10 Schools by Combined SAT: The top 10 schools and their combined SAT scores.
 
-![Top 10 schools sorted by total score](https://github.com/user-attachments/assets/041e4bb7-a5a5-4512-b8bf-1ba3099de03a)
+![Top 10 schools sorted by total score](https://github.com/user-attachments/assets/e1a4f10c-de6c-4721-a6aa-3c1faf4681aa)
+
 
 
 
 Borough with Largest Standard Deviation: Name of the borough, number of schools, average SAT score, and standard deviation.
 
-![Borough with the largest standard deviation in total score](https://github.com/user-attachments/assets/a5954ae8-8bf5-4f55-90a7-2abd5de58db3)
+![Borough with the largest standard deviation in total score](https://github.com/user-attachments/assets/0e508c49-2922-4b2a-b409-a5e6636c7d47)
+
 
 
 
