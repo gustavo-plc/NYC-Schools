@@ -4,7 +4,8 @@
 
 Every year, school test results impact the college admissions fate of millions of students. In this project, standardized test performance data from NY C's public schools will be used to identify the schools with top math results, analyze how performance varies by borough, and find the city's top ten performing schools!
 
-![image.png](attachment:67627f32-5a84-4b57-abd4-b726c0767de2:image.png)
+![image.png](https://github.com/user-attachments/assets/a2f07165-ba40-49d7-a365-8a5610c13693)
+
 
 Skills involved: data cleaning, data analysis, data visualization, and insights generation.
 
@@ -24,17 +25,23 @@ File name: schools.csv
 
 Description: Includes SAT performance data of NYC public schools (as image below).
 
-[A few first lines of the original dataset](https://github.com/user-attachments/assets/14c2dfab-5369-4b2e-bf77-2c4363a2270c)
 
-A few first lines of the original dataset
+<div style="text-align: center;">
+  <figure>
+    <img src="https://github.com/user-attachments/assets/14c2dfab-5369-4b2e-bf77-2c4363a2270c" alt="Original Dataset">
+    <figcaption style="font-size: 0.6em;"> </figcaption>
+  </figure>
+</div>
+
+
 
 Source: Publicly available.
 
 Size and structure: Share the number of rows, columns, and any key details about the data.
 
-[Dataset structure](https://github.com/user-attachments/assets/9d8b5bde-c15d-485e-9560-4658ce74a5ed)
+![Dataset structure](https://github.com/user-attachments/assets/9d8b5bde-c15d-485e-9560-4658ce74a5ed)
 
-Dataset structure
+
 
 ## Approach and Methodology
 
@@ -62,21 +69,21 @@ Provide summaries and key findings for each question:
 
 Best Math Results: List of schools that meet the criteria, with their math scores.
 
-![Schools sorted by math average scores](attachment:ef0db41d-7c4b-4038-8f4b-20a13e072f0f:image.png)
+![Schools sorted by math average scores](https://github.com/user-attachments/assets/412fe726-976e-4852-aab1-044ab364bbd3)
 
-Schools sorted by math average scores
+
 
 Top 10 Schools by Combined SAT: The top 10 schools and their combined SAT scores.
 
-![Top 10 schools sorted by total score](attachment:de1bb3ef-4f83-4b86-86c1-06db092e2cf1:image.png)
+![Top 10 schools sorted by total score](https://github.com/user-attachments/assets/041e4bb7-a5a5-4512-b8bf-1ba3099de03a)
 
-Top 10 schools sorted by total score
+
 
 Borough with Largest Standard Deviation: Name of the borough, number of schools, average SAT score, and standard deviation.
 
-![Borough with the largest standard deviation in total score](attachment:c58231c3-ba17-4dea-a5ef-887328b07395:image.png)
+![Borough with the largest standard deviation in total score](https://github.com/user-attachments/assets/a5954ae8-8bf5-4f55-90a7-2abd5de58db3)
 
-Borough with the largest standard deviation in total score
+
 
 ## Technologies Used
 
