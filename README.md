@@ -1,133 +1,119 @@
 # Analyzing NYC Public School SAT Scores: Insights for Policy Makers, Researchers, and Parents
 
+## **Overview**
 
-1. **Overview**
+Every year, school test results impact the college admissions fate of millions of students. In this project, standardized test performance data from NY C's public schools will be used to identify the schools with top math results, analyze how performance varies by borough, and find the city's top ten performing schools!
 
-    Every year, school test results impact the college admissions fate of millions of students. In this project, standardized test performance data from NYC's public schools will be used to identify the schools with top math results, analyse how performance varies by borough, and find the city's top ten performing schools!
+![image.png](attachment:67627f32-5a84-4b57-abd4-b726c0767de2:image.png)
 
+Skills involved: data cleaning, data analysis, data visualization, and insights generation.
 
-    ![New York City schoolbus](schoolbus.jpg)
+## **Problem Statement**
 
+### This project aims to properly answer these questions:
 
-    Skills involved: data cleaning, data analysis, data visualization, and insights generation.
-   
+**a**) Which NYC schools have the best math results?
 
+**b**) What are the top 10 performing schools based on combined SAT scores?
 
-2. **Problem Statement**
+**c**) Which borough has the largest standard deviation in SAT scores, and what insights can we derive from it?
 
+## **Dataset**
 
-    This project aims to properly answer these questions:
+File name: schools.csv
 
-    a) Which NYC schools have the best math results?
+Description: Includes SAT performance data of NYC public schools (as image below).
 
-    b) What are the top 10 performing schools based on combined SAT scores?
+[A few first lines of the original dataset](https://github.com/user-attachments/assets/14c2dfab-5369-4b2e-bf77-2c4363a2270c)
 
-    c) Which borough has the largest standard deviation in SAT scores, and what insights can we derive from it?
-   
+A few first lines of the original dataset
 
+Source: Publicly available.
 
-3. **Dataset**
-   
+Size and structure: Share the number of rows, columns, and any key details about the data.
 
-    File name: schools.csv
-   
-    Description: Includes SAT performance data of NYC public schools (as image below).
+[Dataset structure](https://github.com/user-attachments/assets/9d8b5bde-c15d-485e-9560-4658ce74a5ed)
 
-    ![image](https://github.com/user-attachments/assets/14c2dfab-5369-4b2e-bf77-2c4363a2270c)
+Dataset structure
 
+## Approach and Methodology
 
-    Source: Publicly available.
-   
-    Size and structure: Share the number of rows, columns, and any key details about the data.
+### Data Cleaning:
 
+The data in the csv file was already clean and fully populated.
 
-    ![image](https://github.com/user-attachments/assets/9d8b5bde-c15d-485e-9560-4658ce74a5ed)
+### Exploratory Data Analysis (EDA):
 
+To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
 
+### Analysis:
 
-4. Approach and Methodology
+The results were obtained from the data frame manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
 
-    
-    Data Cleaning:
-   
-    The data in the csv file was already clean and fully populated.
-   
-    Exploratory Data Analysis (EDA):
+The combined SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation.
 
-    To better understand the data some methods were applied to the data frame. Subsetting and sorting were essential to manipulate data and extract the information needed.
-   
-    Analysis:
-   
-   The results were obtained from the dataframe manipulation, using methods like groupby() and sort_values() as well as visualization methods like .iloc[].
-   
-   The combinated SAT Score and thus the Top 10 Schools were calculated through the sum() method. The mean() and the standard deviation - std_dev() - were used in order to calculate the Borough with the largest Standard Deviation.
-   
-    Insights:
-   
-   The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education. 
+### Insights:
 
+The last question opens up space for discussions on how to reduce the discrepancy between school scores, which reflect the quality of education.
 
+## Results
 
-6. Results
+Provide summaries and key findings for each question:
 
-    Provide summaries and key findings for each question:
-        Best Math Results: List of schools that meet the criteria, with their math scores.
-        Top 10 Schools by Combined SAT: The top 10 schools and their combined SAT scores.
-        Borough with Largest Standard Deviation: Name of the borough, number of schools, average SAT score, and standard deviation.
-    Include links to view the DataFrames (e.g., best_math_schools, top_10_schools, largest_std_dev) or a preview of their outputs.
+Best Math Results: List of schools that meet the criteria, with their math scores.
 
+![Schools sorted by math average scores](attachment:ef0db41d-7c4b-4038-8f4b-20a13e072f0f:image.png)
 
+Schools sorted by math average scores
 
+Top 10 Schools by Combined SAT: The top 10 schools and their combined SAT scores.
 
+![Top 10 schools sorted by total score](attachment:de1bb3ef-4f83-4b86-86c1-06db092e2cf1:image.png)
 
-7. Technologies Used
+Top 10 schools sorted by total score
 
+Borough with Largest Standard Deviation: Name of the borough, number of schools, average SAT score, and standard deviation.
 
-   Languages: Python
-   
-   IDE: Jupyter Notebook on Google Colab
-   
-   Libraries: Pandas, NumPy and Matplotlib.
-   
-   GitHub repo: https://github.com/gustavo-plc/NYC-Schools
+![Borough with the largest standard deviation in total score](attachment:c58231c3-ba17-4dea-a5ef-887328b07395:image.png)
 
+Borough with the largest standard deviation in total score
 
+## Technologies Used
 
-9. Skills Demonstrated
+**Languages**: Python
 
-    
-   Data preprocessing.
-   
-   Exploratory data analysis and visualization.
-   
-   Statistical analysis.
-   
-   Problem-solving and insights generation.
-   
-   Reproducibility with clean code and well-documented processes.
+**IDE**: Jupyter Notebook on Google Colab
 
+**Libraries**: Pandas, NumPy and Matplotlib.
 
+**GitHub** **repo**: https://github.com/gustavo-plc/NYC-Schools
 
+## Skills Demonstrated
 
-10. Future Improvements
+Data preprocessing.
 
+Exploratory data analysis and visualization.
 
+Statistical analysis.
 
-    Additional datasets, like schools budget and academic background of teachers, can be combined with the exisiting data to generate further analysis and insights.
+Problem-solving and insights generation.
 
-    Machine learning could predict future test performance, classify schools by their results to identify the top ten, and analyze performance variations across boroughs to identify influential factors.
+Reproducibility with clean code and well-documented processes.
 
-    Interactive visualizations or dashboards to improove visualization.
+## Future Improvements
 
+Additional datasets, like schools budget and academic background of teachers, can be combined with the existing data to generate further analysis and insights.
 
+Machine learning could predict future test performance, classify schools by their results to identify the top ten, and analyze performance variations across boroughs to identify influential factors.
 
+Interactive visualizations or dashboards to improve visualization.
 
-11. Contact
+## Contact
 
-    Feel free to reach out to me through my LinkedIn profile or GitHub repository for any inquiries, feedback, or further discussion.
-    
-    LinkedIn: https://www.linkedin.com/in/gustavo-plc/
-    
-    GitHub: https://github.com/gustavo-plc
-    
-    I welcome the opportunity to connect with recruiters and others in the industry to discuss potential opportunities or to receive constructive feedback. Let’s stay in touch!
+Feel free to reach out to me through my LinkedIn profile or GitHub repository for any inquiries, feedback, or further discussion.
+
+**LinkedIn**: https://www.linkedin.com/in/gustavo-plc/
+
+**GitHub**: https://github.com/gustavo-plc
+
+I welcome the opportunity to connect with recruiters and others in the industry to discuss potential opportunities or to receive constructive feedback. Let’s stay in touch!
